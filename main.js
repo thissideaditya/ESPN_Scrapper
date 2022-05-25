@@ -14,7 +14,6 @@ function cb(err, res, body) {
   }
 }
 
-// /Users/abhishekgoel/Desktop/Desktop/AbhishekGoel/FJP5/Node/webScrapping/espn_scrapper
 let iplPath = path.join(__dirname,"IPL");
 if (!fs.existsSync(iplPath)) {
   fs.mkdirSync(iplPath);
