@@ -16,7 +16,7 @@ function cb(err, res, body) {
 function extractAllMatchLink(html){
     let selecTool = cheerio.load(html);
     let scorecardElemArr = selecTool('a[data-hover="Scorecard"]');
-    console.log(scorecardElemArr.length);
+    //console.log(scorecardElemArr.length);
     //attr methods -> Method for getting all attributes and their values
     for (let i = 0; i < scorecardElemArr.length; i++){
         let scorecardLink = selecTool(scorecardElemArr[i]).attr("href");
